@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" fill="none">
+  <!-- ATLASIS hero — quiet technical noir. Decorative only; no essential information lives here. -->
+  <rect width="1000" height="260" fill="#0B0D0F"/>
+  <rect x="0.5" y="0.5" width="999" height="259" stroke="#181C20" stroke-width="1"/>
+
+  <!-- corner registration marks -->
+  <path d="M14 30 v-16 h16" stroke="#74787A" stroke-width="1"/>
+  <path d="M986 230 v16 h-16" stroke="#74787A" stroke-width="1"/>
+
+  <!-- faint city grid, right side -->
+  <g stroke="#181C20" stroke-width="1">
+    <path d="M660 30 H972"/>
+    <path d="M660 70 H972"/>
+    <path d="M660 110 H972"/>
+    <path d="M660 150 H972"/>
+    <path d="M660 190 H972"/>
+    <path d="M660 230 H972"/>
+    <path d="M700 30 V230"/>
+    <path d="M745 30 V230"/>
+    <path d="M790 30 V230"/>
+    <path d="M835 30 V230"/>
+    <path d="M880 30 V230"/>
+    <path d="M925 30 V230"/>
+  </g>
+
+  <!-- isochrone rings + markers on the grid -->
+  <circle cx="790" cy="130" r="60" stroke="#2A2F34" stroke-width="1"/>
+  <circle cx="790" cy="130" r="38" stroke="#2A2F34" stroke-width="1"/>
+  <circle cx="790" cy="130" r="18" stroke="#2A2F34" stroke-width="1"/>
+  <circle cx="790" cy="130" r="2.5" fill="#B7A46A"/>
+  <circle cx="835" cy="70" r="2.5" fill="#4A5054"/>
+  <circle cx="745" cy="190" r="2.5" fill="#4A5054"/>
+
+  <!-- skyline silhouette, low contrast -->
+  <g fill="#121518">
+    <rect x="46" y="150" width="34" height="80"/>
+    <rect x="86" y="120" width="26" height="110"/>
+    <rect x="118" y="165" width="40" height="65"/>
+    <rect x="164" y="100" width="22" height="130"/>
+    <rect x="192" y="140" width="32" height="90"/>
+    <rect x="230" y="115" width="24" height="115"/>
+    <rect x="260" y="155" width="36" height="75"/>
+    <rect x="302" y="95" width="20" height="135"/>
+    <rect x="328" y="130" width="28" height="100"/>
+    <rect x="362" y="160" width="38" height="70"/>
+  </g>
+
+  <!-- building outline highlights -->
+  <g stroke="#23282C" stroke-width="1">
+    <path d="M86 120 v110"/>
+    <path d="M164 100 v130"/>
+    <path d="M302 95 v135"/>
+  </g>
+
+  <!-- single lit window -->
+  <rect x="92" y="150" width="4" height="6" fill="#B7A46A"/>
+
+  <!-- dim window grid on two towers -->
+  <g fill="#23282C">
+    <rect x="170" y="112" width="4" height="6"/>
+    <rect x="180" y="112" width="4" height="6"/>
+    <rect x="170" y="128" width="4" height="6"/>
+    <rect x="180" y="128" width="4" height="6"/>
+    <rect x="334" y="142" width="4" height="6"/>
+    <rect x="344" y="142" width="4" height="6"/>
+  </g>
+
+  <!-- crossing streets -->
+  <g stroke="#23282C" stroke-width="1">
+    <path d="M30 208 H400"/>
+    <path d="M30 176 H400"/>
+  </g>
+  <g stroke="#3A3F43" stroke-width="1" stroke-dasharray="3 6">
+    <path d="M30 192 H400"/>
+  </g>
+
+  <!-- brass locator pin above the tallest tower -->
+  <path d="M175 84 l6 10 h-12 z" fill="#B7A46A"/>
+
+  <!-- film grain -->
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0.72  0 0 0 0 0.70  0 0 0 0 0.66  0 0 0 0.05 0"/>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter>
+  <rect width="1000" height="260" filter="url(#grain)" fill="transparent"/>
+</svg>

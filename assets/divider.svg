@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="14" viewBox="0 0 860 14" fill="none">
+  <!-- Section divider: thin lines, center diamond mark, muted brass. Decorative only. -->
+  <path d="M0 7 H424" stroke="#2A2F34" stroke-width="1"/>
+  <path d="M436 7 H860" stroke="#2A2F34" stroke-width="1"/>
+  <rect x="426" y="3" width="8" height="8" transform="rotate(45 430 7)" fill="#B7A46A"/>
+</svg>
