@@ -109,7 +109,7 @@ Backend REST API for shortening URLs with authenticated ownership and click trac
 ### 05 / ENGINEERING NOTES
 
 ```text
-01 · A working demo is the bareback of a product.
+01 · A working demo is the brass tacks of a product.
 
 02 · Failure cases deserve more attention than happy paths.
 
